@@ -1,4 +1,5 @@
-const app = require("express")();
+const express = require("express");
+const app = express();
 const http = require("http").createServer(app);
 const io = require("socket.io")(http);
 const { addUser, getUser, getUsersInRoom, removeUser } = require("./users");
@@ -66,6 +67,8 @@ const { get } = require("http");
 
 app.use(router);
 
+// app.use(express.static("public"));
+
 http.listen(PORT, () => {
-  console.log("listening on port 4000");
+  console.log(`listening on port : ${PORT}`);
 });
