@@ -1,13 +1,13 @@
 {
   "name": "nhie-sever",
   "version": "1.0.0",
-  "description": "\"nhie Server Side\"",
+  "description": "nhie Server Side",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo Error: no test specified && exit 1",
     "start": "nodemon node index.js"
   },
-  "author": "\"Anshul Tilondiya\"",
+  "author": "Anshul Tilondiya",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
